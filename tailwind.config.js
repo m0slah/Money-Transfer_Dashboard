@@ -14,6 +14,9 @@ module.exports = {
           400: "#55565C",
         },
       },
+      borderRadius: {
+        10: "10px",
+      },
     },
   },
   plugins: [],
