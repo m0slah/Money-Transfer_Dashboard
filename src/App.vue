@@ -117,6 +117,46 @@
           </button>
         </div>
       </nav>
+      <div class="flex gap-x-6 py-8">
+        <div class="flex w-3/5 flex-col gap-y-8">
+          <div
+            class="flex items-center justify-between rounded-10 bg-gray-900 bg-[url('../public/img/line-pattern.svg')] p-7"
+          >
+            <div class="flex items-center gap-x-4">
+              <div class="rounded-full bg-gray-700 p-3">
+                <img
+                  src="./assets/icons/paypal.svg"
+                  class="h-5 w-5 fill-current text-indigo-400"
+                />
+              </div>
+              <div>
+                <div class="text-sm text-gray-400">CARD NUMBER</div>
+                <div class="pt-1 text-white">5540 2280 8647 5687</div>
+              </div>
+            </div>
+            <div class="h-full w-px bg-gray-700" />
+            <div>
+              <div class="text-sm text-gray-400">EXPIRE DATE</div>
+              <div class="pt-1 text-white">08/28</div>
+            </div>
+            <div class="h-full w-px bg-gray-700" />
+            <div>
+              <div class="text-sm text-gray-400">CVC</div>
+              <div class="flex items-center gap-x-2">
+                <div class="pt-1 text-white">****</div>
+                <button>
+                  <img src="./assets/icons/eye.svg" class="h-6 w-6 stroke-current text-white" />
+                </button>
+              </div>
+            </div>
+            <div class="h-full w-px bg-gray-700" />
+            <div>
+              <div class="text-sm text-gray-400">STATUS</div>
+              <div class="pt-1 text-white">Active</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </div>
 </template>
