@@ -7,17 +7,16 @@
         class="flex items-center gap-x-4 px-8 text-2xl font-medium text-white focus:outline-none"
       >
         <img
-          :src="dashboardIcon"
-          alt="dashboardIcon"
-          class="h-6 w-6 stroke-current"
+          src="./assets/icons/dashboard.svg"
+          class="h-6 w-6 stroke-current text-gray-400"
         />
-        <span> Transfer</span>
+        <span>Transfer</span>
       </a>
       <ul class="flex flex-1 flex-col gap-y-10 px-8 pt-14 pb-6">
         <li v-for="item in menu">
           <a
             href="#"
-            class="flex items-center gap-x-4 text-gray-400 hover:font-medium hover:text-white focus:font-medium focus:text-white focus:outline-none"
+            class="flex items-center gap-x-4 text-gray-400 hover:font-medium hover:text-white duration-200 focus:font-medium focus:text-white focus:outline-none"
           >
             <img :src="item.icon" class="h-6 w-6 stroke-current" />
             <span>{{ item.name }}</span>
@@ -32,7 +31,7 @@
         </div>
         <div class="mt-3 text-sm text-gray-400">The reward of transfer.</div>
         <button
-          class="mt-4 w-full rounded-lg bg-gray-700 py-2 text-sm font-normal text-gray-400 hover:text-white"
+          class="mt-4 w-full rounded-lg bg-gray-700 py-2 text-sm font-normal text-gray-400 hover:text-white duration-200"
         >
           Invite
         </button>
@@ -86,7 +85,7 @@
                 src="./assets/icons/bell.svg"
                 class="h-7 w-7 stroke-current"
               />
-              <div class="absolute top-3 right-3 flex h-2 w-2">
+              <div class="absolute top-2 right-3 flex h-2 w-2">
                 <span
                   class="absolute inline-flex h-full w-full animate-ping rounded-full bg-indigo-400 opacity-75"
                 />
@@ -111,7 +110,10 @@
               class="h-8 w-8 rounded-full object-cover"
             />
             <span class="pl-2 text-sm">MO Slah</span>
-            <ChevronDownIcon class="h-6 w-6 stroke-current" />
+            <img
+              src="./assets/icons/chevron-down.svg"
+              class="h-4 w-4 stroke-current mx-2"
+            />
           </button>
         </div>
       </nav>
@@ -119,29 +121,21 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import HomeIcon from "@/assets/icons/home.svg"; // Update the path to your SVG icon files
 import BillIcon from "@/assets/icons/bill.svg"; // Update the path to your SVG icon files
 import InvoiceIcon from "@/assets/icons/invoice.svg"; // Update the path to your SVG icon files
 import BuildingIcon from "@/assets/icons/building.svg"; // Update the path to your SVG icon files
 import CardIcon from "@/assets/icons/card.svg"; // Update the path to your SVG icon files
 import SettingsIcon from "@/assets/icons/settings.svg"; // Update the path to your SVG icon files
-import DashboardIcon from "@/assets/icons/dashboard.svg";
+import DashboardIcon from "./assets/icons/dashboard.svg";
 
-export default {
-  name: "App",
-  data() {
-    return {
-      menu: [
-        { name: "Home", icon: HomeIcon },
-        { name: "USA Payors", icon: BillIcon },
-        { name: "Invoices", icon: InvoiceIcon },
-        { name: "My Banks", icon: BuildingIcon },
-        { name: "Withdraw", icon: CardIcon },
-        { name: "Settings", icon: SettingsIcon },
-      ],
-      dashboardIcon: [DashboardIcon],
-    };
-  },
-};
+const menu = [
+  { name: "Home", icon: HomeIcon },
+  { name: "USA Payors", icon: BillIcon },
+  { name: "Invoices", icon: InvoiceIcon },
+  { name: "My Banks", icon: BuildingIcon },
+  { name: "Withdraw", icon: CardIcon },
+  { name: "Settings", icon: SettingsIcon },
+];
 </script>

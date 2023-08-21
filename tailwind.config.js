@@ -13,6 +13,10 @@ module.exports = {
           700: "#181A1E",
           400: "#55565C",
         },
+        indigo: {
+          400: "#927CFF",
+          700: "#4D3E97",
+        },
       },
       borderRadius: {
         10: "10px",
