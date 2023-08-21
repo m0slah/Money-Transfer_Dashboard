@@ -145,7 +145,10 @@
               <div class="flex items-center gap-x-2">
                 <div class="pt-1 text-white">****</div>
                 <button>
-                  <img src="./assets/icons/eye.svg" class="h-6 w-6 stroke-current text-white" />
+                  <img
+                    src="./assets/icons/eye.svg"
+                    class="h-6 w-6 stroke-current text-white"
+                  />
                 </button>
               </div>
             </div>
@@ -153,6 +156,61 @@
             <div>
               <div class="text-sm text-gray-400">STATUS</div>
               <div class="pt-1 text-white">Active</div>
+            </div>
+          </div>
+
+          <!-- Statistics of costs -->
+          <div class="flex flex-col justify-between rounded-10 bg-gray-900 p-7">
+            <div class="flex items-center justify-between">
+              <h2 class="text-[20px] font-medium text-white">
+                Statistics of costs
+              </h2>
+              <button
+                class="inline-flex items-center gap-x-1 rounded-10 bg-gray-700 py-2 px-4 text-sm text-gray-400 hover:text-white"
+              >
+                <span>Jan - Aug</span>
+                <img
+                  src="./assets/icons/chevron-down.svg"
+                  ChevronDownIcon
+                  class="h-3 w-3 mx-2 stroke-current"
+                />
+              </button>
+            </div>
+            <div class="flex gap-x-8 pt-8">
+              <img
+                src="./assets/charts/statistic.svg"
+                StatisticChart
+                class="w-full"
+              />
+              <div class="flex flex-col gap-4">
+                <div
+                  class="flex items-center gap-x-3 rounded-10 bg-indigo-400 p-4"
+                >
+                  <div class="rounded-full bg-gray-900 p-2 text-indigo-700">
+                    <img
+                      src="./assets/icons/revenue.svg"
+                      class="h-6 w-6 fill-current"
+                    />
+                  </div>
+                  <div>
+                    <div class="text-sm text-indigo-700">Revenue</div>
+                    <div class="font-normal">$10.576</div>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center gap-x-3 rounded-10 bg-green-400 p-4"
+                >
+                  <div class="rounded-full bg-gray-900 p-2 text-green-700">
+                    <img
+                      src="./assets/icons/revenue.svg"
+                      class="h-6 w-6 fill-current"
+                    />                  </div>
+                  <div>
+                    <div class="text-sm text-green-700">Expenses</div>
+                    <div class="font-normal">$8.576</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
